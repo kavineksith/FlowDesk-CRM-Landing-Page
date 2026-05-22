@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowDesk CRM — Leads & Clients, Simplified</title>
+
+  <!-- Google Fonts: Playfair Display (headings) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <!-- Compiled stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav__inner">
+
+      <!-- Logo -->
+      <a href="#" class="nav__logo">
+        <i class="fa-solid fa-wave-square" aria-hidden="true"></i>
+        FlowDesk
+      </a>
+
+      <!-- Nav links -->
+      <ul class="nav__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <!-- CTA in nav scrolls to the features section -->
+        <li>
+          <a href="#features" class="btn btn--outline">
+            Get Started
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container hero__inner">
+
+      <!-- Left: copy -->
+      <div class="hero__content">
+        <span class="hero__badge">
+          <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+          CRM for freelancers &amp; agencies
+        </span>
+
+        <h1 class="hero__title" id="hero-heading">
+          Manage Leads &amp; Clients<br />
+          <span>Without the Chaos</span>
+        </h1>
+
+        <p class="hero__desc">
+          FlowDesk keeps your pipeline clean, your follow-ups on time,
+          and your clients happy — all in one lightweight workspace.
+        </p>
+
+        <!--
+          CTA anchor link → smooth scroll to #features section
+          scroll-behavior: smooth is set in CSS on <html>
+          No JavaScript required!
+        -->
+        <a href="#features" class="btn btn--primary">
+          Start for Free
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Right: image -->
+      <div class="hero__image">
+        <img
+          src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=700&q=80"
+          alt="A clean dashboard view showing a project overview on a laptop"
+          width="700"
+          height="466"
+        />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== FEATURES ==================== -->
+  <section class="features" id="features" aria-labelledby="features-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <h2 id="features-heading">Everything You Need. Nothing You Don't.</h2>
+        <p>Built for small agencies and freelancers who need clarity, not complexity.</p>
+      </div>
+
+      <!-- Three feature cards -->
+      <div class="features__grid">
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <i class="fa-solid fa-filter"></i>
+          </div>
+          <h3>Lead Tracking</h3>
+          <p>
+            Capture and organise every lead in one place.
+            Never lose track of a potential client again.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <h3>Follow-up Reminders</h3>
+          <p>
+            Set smart reminders and stay on top of every deal
+            without the mental overhead of sticky notes.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <h3>Client Management</h3>
+          <p>
+            Keep notes, history, and contact details in one clean
+            profile per client — always ready when you need it.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FAQ (pure HTML <details>, no JS) ==================== -->
+  <section class="faq" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <h2 id="faq-heading">Frequently Asked Questions</h2>
+        <p>Quick answers to common questions about FlowDesk.</p>
+      </div>
+
+      <div class="faq__list">
+
+        <!--
+          <details> + <summary> is a native HTML interactive pattern.
+          It toggles open/closed with zero JavaScript.
+          The CSS uses details[open] to rotate the chevron icon.
+        -->
+        <details class="faq__item">
+          <summary class="faq__question">
+            Is FlowDesk free to use?
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </summary>
+          <div class="faq__answer">
+            <p>
+              Yes! FlowDesk has a generous free tier for freelancers and small teams.
+              You can manage up to 50 leads and 10 active clients with no credit card required.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Do I need technical skills to get started?
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </summary>
+          <div class="faq__answer">
+            <p>
+              Not at all. FlowDesk is designed to be intuitive from day one.
+              If you can use a spreadsheet, you can use FlowDesk —
+              no training or setup sessions needed.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Can I import my existing contacts?
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </summary>
+          <div class="faq__answer">
+            <p>
+              Absolutely. FlowDesk supports CSV imports so you can bring in
+              contacts from spreadsheets or other tools in just a few minutes.
+            </p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <a href="#" class="nav__logo">
+        <i class="fa-solid fa-wave-square" aria-hidden="true"></i>
+        FlowDesk
+      </a>
+      <p>© 2025 FlowDesk CRM. Built with care for freelancers.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
